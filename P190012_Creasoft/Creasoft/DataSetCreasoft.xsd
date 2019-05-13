@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetCreasoft" targetNamespace="http://tempuri.org/Creasoft.xsd" xmlns:mstns="http://tempuri.org/Creasoft.xsd" xmlns="http://tempuri.org/Creasoft.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetCreasoft" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetCreasoft" msprop:Generator_UserDSName="DataSetCreasoft">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="zbozi" msprop:Generator_TableClassName="zboziDataTable" msprop:Generator_TableVarName="tablezbozi" msprop:Generator_RowChangedName="zboziRowChanged" msprop:Generator_TablePropName="zbozi" msprop:Generator_RowDeletingName="zboziRowDeleting" msprop:Generator_RowChangingName="zboziRowChanging" msprop:Generator_RowEvHandlerName="zboziRowChangeEventHandler" msprop:Generator_RowDeletedName="zboziRowDeleted" msprop:Generator_RowClassName="zboziRow" msprop:Generator_UserTableName="zbozi" msprop:Generator_RowEvArgName="zboziRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="nazev" msprop:Generator_ColumnVarNameInTable="columnnazev" msprop:Generator_ColumnPropNameInRow="nazev" msprop:Generator_ColumnPropNameInTable="nazevColumn" msprop:Generator_UserColumnName="nazev" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="pocet_kusu_skladem" msprop:Generator_ColumnVarNameInTable="columnpocet_kusu_skladem" msprop:Generator_ColumnPropNameInRow="pocet_kusu_skladem" msprop:Generator_ColumnPropNameInTable="pocet_kusu_sklademColumn" msprop:Generator_UserColumnName="pocet_kusu_skladem" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:zbozi" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FILES>
+  <FOLDER archive=".\Backup" output=".\vyrizeno.csv" filter="Objednavky.csv" path=".\" />
+</FILES>

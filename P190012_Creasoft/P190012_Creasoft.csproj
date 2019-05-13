@@ -42,11 +42,46 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Creasoft\DataSetCreasoft.cs">
+      <DependentUpon>DataSetCreasoft.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Creasoft\DataSetCreasoft.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetCreasoft.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Creasoft\IDataBase.cs" />
+    <Compile Include="Creasoft\MSSQLDatabase.cs" />
+    <Compile Include="Creasoft\Folder.cs" />
+    <Compile Include="Creasoft\ConfigXML.cs" />
+    <Compile Include="Creasoft\ImportFile.cs" />
+    <Compile Include="Creasoft\MyConsole.cs" />
+    <Compile Include="Creasoft\Zbozi.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Creasoft\DataSetCreasoft.xsc">
+      <DependentUpon>DataSetCreasoft.xsd</DependentUpon>
+    </None>
+    <None Include="Creasoft\DataSetCreasoft.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetCreasoft.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Creasoft\DataSetCreasoft.xss">
+      <DependentUpon>DataSetCreasoft.xsd</DependentUpon>
+    </None>
+    <None Include="Objednavky.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="test1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
